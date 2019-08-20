@@ -1,6 +1,13 @@
+body {
+  /* background-image: 
+    url('https://images.unsplash.com/photo-1557242836-b5ab8bb0ebb4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80'); */
+  background-size: cover;
+  background-color: #ff8c69;
+}
+
+
 .App {
   text-align: center;
-  background-image: url('https://images.unsplash.com/photo-1557242836-b5ab8bb0ebb4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80');
 }
 
 .navbar {
@@ -16,17 +23,45 @@
   margin: 20px;
   padding: 20px;
   text-align: center;
+  color: white;
 }
 
 .rivers {
   margin: 20px;
   padding: 20px;
   text-align: center;
+  color: white;
 }
 
 .profile {
   margin: 20px;
   padding: 20px;
   text-align: center;
+  color: white;
 }
+
+.link {
+  color: white;
+  text-decoration: none;
+
+}
+
+/* .custom {
+  cursor: url(images/my-cursor.png), auto;
+} */
+
+label {
+  color: white;
+}
+
+/* form {
+  display: flex;
+}
+
+input {
+  flex-wrap: wrap; 
+} */
+
+
+
 
