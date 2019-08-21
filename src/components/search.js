@@ -13,7 +13,8 @@ const Search = (props) => {
                 cFS={river.ob.flowCFS} 
                 status={river.ob.status} 
                 gaugeLocation={river.place.name} 
-                itself={river.profile.waterbody}/>
+                itself={river.profile.waterbody}
+                addFavorite={props.addFavorite}/>
     });
 
 

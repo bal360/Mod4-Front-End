@@ -1,16 +1,9 @@
 import React, { Component } from 'react';
+
 class Form extends Component {
     
         
-        
-        
-        render() { 
-            // console.log("river data", this.props.riverData);
-            
-            // // const rivers = this.state.riverData.map(river => {
-            // //     console.log(river)
-            // //     return river
-            // // })
+    render() { 
         return ( 
             <form onSubmit={this.props.handleSubmit}>
                 <label htmlFor="cityState">Location: </label>
