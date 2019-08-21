@@ -1,8 +1,9 @@
 body {
-  /* background-image: 
-    url('https://images.unsplash.com/photo-1557242836-b5ab8bb0ebb4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80'); */
+  background-image: 
+    url('https://upload.wikimedia.org/wikipedia/commons/7/7a/Rioni_river_-_Georgia_%28Europe%29.jpg');
   background-size: cover;
-  background-color: #ff8c69;
+  /* background-color: #ff8c69; */
+  /* color: white; */
 }
 
 
@@ -17,13 +18,15 @@ body {
 .link {
   margin: 2rem;
   font-size: 2rem;
+  color: white;
+  text-decoration: none;
 }
 
-.home {
+.search {
   margin: 20px;
   padding: 20px;
   text-align: center;
-  color: white;
+  color: black;
 }
 
 .rivers {
@@ -40,12 +43,6 @@ body {
   color: white;
 }
 
-.link {
-  color: white;
-  text-decoration: none;
-
-}
-
 /* .custom {
   cursor: url(images/my-cursor.png), auto;
 } */
@@ -54,14 +51,20 @@ label {
   color: white;
 }
 
-/* form {
-  display: flex;
+.row {
+  justify-content: space-between;
+  margin-top: 50px;
 }
 
-input {
-  flex-wrap: wrap; 
-} */
+.card {
+  margin-top: 50px;
+  color: black;
+  border-color: black;
+  background-color: rgba(255, 255, 255, 0.438);
+}
 
-
+.listgroupitem {
+  background-color: rgba(255, 255, 255, 0.562);
+}
 
 
