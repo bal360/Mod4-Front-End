@@ -1,38 +1,24 @@
 body {
   background-image: 
-    url('https://upload.wikimedia.org/wikipedia/commons/7/7a/Rioni_river_-_Georgia_%28Europe%29.jpg');
-  background-size: cover;
+    url('https://cdn.pixabay.com/photo/2016/08/12/20/14/yellowstone-national-park-1589616_960_720.jpg');
+  background-size: cover; 
   /* background-color: #ff8c69; */
   /* color: white; */
 }
-
 
 .App {
   text-align: center;
 }
 
 .navbar {
-  text-align: center;
-}
-
-.link {
-  margin: 2rem;
-  font-size: 2rem;
-  color: white;
-  text-decoration: none;
+  border-color: white;
 }
 
 .search {
   margin: 20px;
   padding: 20px;
   text-align: center;
-  color: black;
-}
-
-.rivers {
-  margin: 20px;
-  padding: 20px;
-  text-align: center;
+  background-color: rgba(160, 153, 167, 0.418);
   color: white;
 }
 
@@ -40,16 +26,12 @@ body {
   margin: 20px;
   padding: 20px;
   text-align: center;
-  color: white;
+  color: black;
 }
 
 /* .custom {
   cursor: url(images/my-cursor.png), auto;
 } */
-
-label {
-  color: white;
-}
 
 .row {
   justify-content: space-between;
@@ -58,13 +40,34 @@ label {
 
 .card {
   margin-top: 50px;
+  color: white;
+  font-weight: bold;
+  border-color: white;
+  background-color: rgba(255, 255, 255, 0.185);
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.list-group-item{
+  background-color: rgba(104, 93, 93, 0.384);
+  color: white;
+  font-weight: bold;
+} 
+
+.card-link {
+  cursor: pointer
+}
+
+.searchButton {
+  margin-top: 28px;
+  background-color: white;
   color: black;
   border-color: black;
-  background-color: rgba(255, 255, 255, 0.438);
-}
+  width: 200px;
+};
 
-.listgroupitem {
-  background-color: rgba(255, 255, 255, 0.562);
-}
-
-
+.searchButton:hover {
+  background-color: pink;
+};
