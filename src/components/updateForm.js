@@ -1,5 +1,5 @@
 import React from 'react'
-import { Form, Button } from 'react-bootstrap';
+import { Form, Button, Jumbotron } from 'react-bootstrap';
 
 class UpdateForm extends React.Component {
     constructor(props) {
@@ -41,40 +41,46 @@ class UpdateForm extends React.Component {
     };
         
         render() {
-            console.log('update', this.state);
             return (
-            <Form onSubmit={this.handleUpdate}>
-                <Form.Group controlId="form-name">
-                    <Form.Label>Name</Form.Label>
-                    <Form.Control 
-                        type="text" 
-                        value={this.state.name}
-                        name="name"
-                        onChange={this.handleChange}
+            <Jumbotron className="updateJumbo">
+                <Form className="updateForm" onSubmit={this.handleUpdate}>
+                    <Form.Group controlId="form-name">
+                        <Form.Label>Name</Form.Label>
+                        <Form.Control 
+                            type="text" 
+                            value={this.state.name}
+                            name="name"
+                            onChange={this.handleChange}
+                            />
+                    </Form.Group>
+                    <Form.Group controlId="form-location">
+                        <Form.Label>Location</Form.Label>
+                        <Form.Control 
+                            type="text" 
+                            value={this.state.location}
+                            name="location"
+                            onChange={this.handleChange}
+                            />
+                    </Form.Group>
+                    <Form.Group controlId="form-email">
+                        <Form.Label>Email</Form.Label>
+                        <Form.Control 
+                            type="email" 
+                            value={this.state.email}
+                            name="email"
+                            onChange={this.handleChange}
                         />
-                </Form.Group>
-                <Form.Group controlId="form-location">
-                    <Form.Label>Location</Form.Label>
-                    <Form.Control 
-                        type="text" 
-                        value={this.state.location}
-                        name="location"
-                        onChange={this.handleChange}
-                        />
-                </Form.Group>
-                <Form.Group controlId="form-email">
-                    <Form.Label>Email</Form.Label>
-                    <Form.Control 
-                        type="email" 
-                        value={this.state.email}
-                        name="email"
-                        onChange={this.handleChange}
-                    />
-                </Form.Group>
-                <Button variant="primary" type="submit">
-                    Submit
-                </Button>
-            </Form>
+                    </Form.Group>
+                    <Button 
+                        className="updateButton"
+                        variant="primary" 
+                        type="submit"
+                        size="lg"
+                    >
+                        Submit
+                    </Button>
+                </Form>
+            </Jumbotron>
         )
     }    
 };

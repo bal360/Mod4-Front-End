@@ -71,8 +71,14 @@ class App extends React.Component {
     return (
       <div>
         <Router>
-          <Navbar>
-            <Navbar.Brand href="#home" src="https://us.123rf.com/450wm/djem/djem1311/djem131101210/23570865-abstract-fly-fishing-in-black-color-on-white-background.jpg?ver=6"></Navbar.Brand>
+          <Navbar bg="light" variant="light">
+            <Navbar.Brand href="#home">
+              <img 
+                src="https://cdn.pixabay.com/photo/2012/04/16/13/55/fish-36085_960_720.png" 
+                alt="fish logo" 
+                height="100" 
+              />
+            </Navbar.Brand>
               <Nav className="mr-auto">
                 <Nav.Link href="/">RiverSearch</Nav.Link>
                 <Nav.Link href="/profile/">Profile</Nav.Link>

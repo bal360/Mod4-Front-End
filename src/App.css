@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+
+
 body {
   background-image: 
     url('https://cdn.pixabay.com/photo/2016/08/12/20/14/yellowstone-national-park-1589616_960_720.jpg');
@@ -10,9 +13,10 @@ body {
   text-align: center;
 }
 
-.navbar {
+/* .navbar {
   border-color: white;
-}
+  color: white;
+} */
 
 .search {
   margin: 20px;
@@ -20,6 +24,7 @@ body {
   text-align: center;
   background-color: rgba(160, 153, 167, 0.418);
   color: white;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .profile {
@@ -44,6 +49,11 @@ body {
   font-weight: bold;
   border-color: white;
   background-color: rgba(255, 255, 255, 0.185);
+  font-family: 'Work Sans', sans-serif;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 20px;
 }
 
 .card-title {
@@ -60,14 +70,75 @@ body {
   cursor: pointer
 }
 
+.card-img-top {
+  opacity: 0.8;
+}
+
 .searchButton {
   margin-top: 28px;
-  background-color: white;
+  background-color: rgba(245, 240, 240, 0.897);
   color: black;
   border-color: black;
   width: 200px;
-};
+}
 
 .searchButton:hover {
+  color: black;
   background-color: pink;
-};
+}
+
+.profileButton {
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.459);
+  border-color: black;
+  color: black;
+}
+
+.profileButton:hover {
+  color: black;
+  background-color: pink;
+}
+
+.updateButton {
+  margin-top: 28px;
+  background-color: rgba(245, 240, 240, 0.897);
+  color: black;
+  border-color: black;
+  width: 200px;
+}
+
+.updateButton:hover {
+  color: black;
+  background-color: rgba(245, 186, 196, 0.932);
+}
+
+.profileJumbo {
+  width: 700px;
+  margin-left: 740px;
+  margin-top: 50px;
+  font-family: 'Work Sans', sans-serif;
+  background-color: rgba(219, 220, 224, 0.37);
+  color: white;
+  border-color: black;
+  text-align: center;
+}
+
+.updateJumbo {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  font-family: 'Work Sans', sans-serif;
+  background-color: rgba(219, 220, 224, 0.041);
+  color: white;
+  border-color: black;
+}
+
+.nav-link {
+  font-size: 25px;
+}
+
+
+
+
+
+

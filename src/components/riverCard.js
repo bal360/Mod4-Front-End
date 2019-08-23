@@ -22,7 +22,7 @@ class RiverCard extends React.Component {
     render() {
         return ( 
             <Card style={{ width: '18rem' }} >
-                <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRw6PCp2nIwEwEC-sCZW1_89CXdfGxU288usS96_7zgaw9gtOsDA" />
+                <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRg-5duaT2NLzsdmUzNbGr0v87M7FANaYQbKVfNTfWPhD_dRcwd" />
                 <Card.Body>
                     <Card.Title>{this.props.itself.toUpperCase()}</Card.Title>
                 </Card.Body>

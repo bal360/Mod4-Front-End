@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import RiverCard from './riverCard'
-// import UpdateForm from './updateForm'
 import { withRouter } from 'react-router-dom'
+import { Jumbotron, Button } from 'react-bootstrap';
 
 
 const Profile = (props) => {
@@ -25,19 +25,23 @@ const Profile = (props) => {
         });
 
    return ( 
-        <div className="profile">
-            <div>
-                <h1>Name: {user.name}</h1>
-            </div>
-            <div>
+        <div>
+            <Jumbotron 
+                className="profileJumbo"
+                
+            >
+                <h1>Name: {user.name} </h1>
                 <h2>Location: {user.location}</h2>
-            </div>
-            <div>
                 <h3>Email: {user.email}</h3>
-            </div>
-            <div>
-                <button type="button" onClick={() => {props.history.push('/updateForm')}}>Update Profile</button>
-            </div>
+                <Button 
+                    variant="primary" 
+                    className="profileButton"
+                    size="lg"
+                    onClick={() => {props.history.push('/updateForm')}}
+                >
+                    Update Profile
+                </Button>
+            </Jumbotron>
             <Container>
                 <Row>
                     {RiverCards}
